@@ -8,7 +8,7 @@ interface ArticleProps {
 
 const SingleArticle = ({ article }: ArticleProps) => {
     return (
-        <Row className="flex-direction-row">
+        <Row>
             <Col md={3}>
         <Card>
         <Card.Img variant="top" src={article.imageUrl} />
