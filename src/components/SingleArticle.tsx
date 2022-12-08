@@ -1,6 +1,5 @@
-import { ListGroup } from 'react-bootstrap'
 import { SpaceArticle } from '../types'
-import {Row, Col, Card} from 'react-bootstrap'
+import {Row, Col, Card, Container} from 'react-bootstrap'
 
 interface ArticleProps {
   article: SpaceArticle
@@ -8,8 +7,9 @@ interface ArticleProps {
 
 const SingleArticle = ({ article }: ArticleProps) => {
     return (
-        <Row>
-            <Col md={3}>
+        <Container>
+        <Row lg={3}>
+            <Col>
         <Card>
         <Card.Img variant="top" src={article.imageUrl} />
         <Card.Body>
@@ -23,6 +23,7 @@ const SingleArticle = ({ article }: ArticleProps) => {
       </Card>
       </Col>
       </Row>
+      </Container>
     )
 }
 
